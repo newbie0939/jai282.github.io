@@ -28,7 +28,6 @@ body {
   font-size: 16px;
 }
  
-/* ── NAV ── */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -82,7 +81,6 @@ nav {
 .nav-links a:hover::after,
 .nav-links a.active::after { transform: scaleX(1); }
  
-/* hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -100,10 +98,8 @@ nav {
   transition: var(--transition);
 }
  
-/* ── PAGE WRAPPER ── */
 main { padding-top: 64px; }
  
-/* ── HERO (index) ── */
 .hero {
   min-height: calc(100vh - 64px);
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, var(--navy-light) 100%);
@@ -226,7 +222,6 @@ main { padding-top: 64px; }
   opacity: 0.3;
 }
  
-/* ── SECTION SHARED ── */
 section { padding: 5rem 6rem; }
  
 .section-label {
@@ -253,7 +248,6 @@ section { padding: 5rem 6rem; }
   margin-bottom: 2.5rem;
 }
  
-/* ── HOME HIGHLIGHTS ── */
 .highlights {
   background: var(--off-white);
   display: grid;
@@ -292,7 +286,6 @@ section { padding: 5rem 6rem; }
  
 .highlight-card p { color: var(--muted); font-size: 0.92rem; }
  
-/* ── ABOUT PAGE ── */
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1.6fr;
@@ -372,7 +365,6 @@ section { padding: 5rem 6rem; }
 }
 .edu-item p { font-size: 0.9rem; color: var(--muted); }
  
-/* ── PROJECTS PAGE ── */
 .projects-intro {
   max-width: 620px;
   margin-bottom: 3rem;
@@ -454,7 +446,6 @@ section { padding: 5rem 6rem; }
 }
 .project-link:hover { color: var(--navy); }
  
-/* ── CONTACT PAGE ── */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
@@ -495,7 +486,6 @@ section { padding: 5rem 6rem; }
 .social-link:hover { border-color: var(--gold); background: rgba(200,168,75,0.08); }
 .social-link:hover svg { stroke: var(--gold); }
  
-/* ── FORM ── */
 .form-group { margin-bottom: 1.25rem; }
  
 label {
@@ -542,7 +532,6 @@ textarea { resize: vertical; min-height: 130px; }
 }
 .btn-submit:hover { background: var(--navy-light); transform: translateY(-2px); }
  
-/* ── FOOTER ── */
 footer {
   background: var(--navy);
   color: rgba(237,240,247,0.5);
@@ -551,8 +540,7 @@ footer {
   font-size: 0.85rem;
 }
 footer span { color: var(--gold); }
- 
-/* ── ANIMATIONS ── */
+
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -564,8 +552,7 @@ footer span { color: var(--gold); }
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
- 
-/* ── RESPONSIVE ── */
+
 @media (max-width: 900px) {
   nav { padding: 0 1.5rem; }
   .nav-links { display: none; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); padding: 1.5rem; gap: 1.25rem; border-bottom: 1px solid var(--border); }
